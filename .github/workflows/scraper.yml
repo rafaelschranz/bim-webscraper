@@ -17,6 +17,9 @@ jobs:
       with:
         node-version: 18
 
+    - name: Debug environment variables
+      run: printenv
+
     - name: Install dependencies
       run: npm install
 
