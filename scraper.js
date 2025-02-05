@@ -1,5 +1,8 @@
+require('dotenv').config();
+
 const { chromium } = require("playwright");
 const { createClient } = require("@supabase/supabase-js");
+
 
 // Pull these from the environment. In GitHub Actions, they'll be injected from your repo secrets.
 const SUPABASE_URL = process.env.SUPABASE_URL;
